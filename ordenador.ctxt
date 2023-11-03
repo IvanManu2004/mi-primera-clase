@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=ordenador
+comment1.params=setProcesador\ setRam
+comment1.target=ordenador(java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getProcesador()
+comment3.params=
+comment3.target=int\ getMemoriaRam()
+comment4.params=
+comment4.target=boolean\ getRefrigeracion()
+comment5.params=nuevoProcesador
+comment5.target=void\ setProcesador(java.lang.String)
+comment6.params=nuevaRam
+comment6.target=void\ setRam(int)
+comment7.params=
+comment7.target=void\ alternarRefrigeracion()
+numComments=8

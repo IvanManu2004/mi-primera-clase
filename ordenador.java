@@ -6,38 +6,46 @@ public class ordenador {
     //Tiene o no refrigeracion Liquida
     private boolean refrigeracionLiquida;
     
-    public ordenador (String setProcesador, int setRam) {
+    public ordenador(String setProcesador, int setRam) {
         procesador = setProcesador;
         ram = setRam;
         refrigeracionLiquida = false;
     }
     
-    public String getProcesador () {
+    public String getProcesador() {
         return procesador;
     }
     
-    public int getMemoriaRam () {
+    public int getMemoriaRam() {
         return ram;
     }
     
-    public boolean getRefrigeracion () {
+    public boolean getRefrigeracion() {
         return refrigeracionLiquida;
     }
     
-    public void setProcesador (String nuevoProcesador) {
+    public void setProcesador(String nuevoProcesador) {
         procesador = nuevoProcesador;
     }
     
-    public void setRam (int nuevaRam) {
+    public void setRam(int nuevaRam) {
         ram = nuevaRam;
     }
     
-    public void alternarRefrigeracion () {
+    public void alternarRefrigeracion() {
         if (refrigeracionLiquida == false) {
             refrigeracionLiquida = true;
         }
         else {
             refrigeracionLiquida = false;
         }
+    }
+    
+    public void imprimirDetalles() {
+        System.out.println("Procesador: " + procesador + " | Memoria RAM: " + ram + "gb | Refrigeracion Liquida: " + refrigeracionLiquida);
+    }
+    
+    public String getEstado() {
+        return "Procesador: " + procesador + " | RAM: " + ram + " | Refrigeración líquida: " + refrigeracionLiquida;
     }
 }
